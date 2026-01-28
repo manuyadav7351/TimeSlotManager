@@ -11,8 +11,11 @@ const TimeslotList: React.FC<TimeslotListProps> = ({timeslots,selectedTimeslot,o
   if (isLoading) {
     return (
       <div className="timeslot-container">
-        <h3>Timeslots</h3>
-        <p>Loading timeslots...</p>
+      <div className="dots-loader">
+        <span />
+        <span />
+        <span />
+      </div>
       </div>
     );
   }

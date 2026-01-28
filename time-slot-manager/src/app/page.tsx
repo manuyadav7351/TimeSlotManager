@@ -55,7 +55,7 @@ export default function Home() {
           <p>{error}</p>
           <button onClick={() => window.location.reload()}>Retry</button>
       </div>)}
-
+      
       <section className="content">
         <span className='sub-content1'>
           <TimezoneDropdown timezones={timezones} selectedTimezone={selectedTimezone} onTimezoneChange={tz => { setSelectedTimezone(tz); setSelectedTimeslot(null); setShowDetails(false); }} isLoading={loading}/>
