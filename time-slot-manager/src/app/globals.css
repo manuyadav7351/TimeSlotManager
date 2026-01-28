@@ -24,7 +24,6 @@ body {
   position: relative;
 }
 
-/* subtle glow */
 .main-container::before {
   content: "";
   position: absolute;
@@ -74,15 +73,18 @@ body {
   margin-bottom: 2rem;
   color: #ffb3c1;
   box-shadow: 0 12px 40px rgba(255, 70, 100, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .error-message button {
-  margin-top: 0.5rem;
   padding: 0.6rem 1.2rem;
   background: rgba(255, 70, 100, 0.9);
   color: white;
   border: none;
-  border-radius: 999px;
+  border-radius: 4px;
   cursor: pointer;
   transition: transform 0.15s ease, filter 0.15s ease;
 }
@@ -288,14 +290,7 @@ body {
 
   html,
   body {
-    max-width: 100vw;
-    overflow-x: hidden;
     overflow-y: visible;
-    font-family:Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: radial-gradient(1200px 800px at 20% 10%, #1b1b2f, #0b0b14 55%, #05050a);
-    color: #e8e8f2;
   }
 
   .main-container {
