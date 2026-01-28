@@ -16,6 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get("/", (req, res) => res.send("Server is alive!"));
 app.use("/timezones", timezoneRoutes);
 app.use("/timeslots", timeslotRoutes);
 
