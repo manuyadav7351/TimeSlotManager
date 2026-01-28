@@ -22,3 +22,9 @@ npm install
 npm run dev
 
 http://localhost:3000
+
+
+## 🔧 Deployment Setup (Deployed Application Details)
+Render for Backend Server
+Neon for Postgres DB
+Vercel for UI Deployment
