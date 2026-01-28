@@ -34,7 +34,7 @@ const TimezoneDropdown: React.FC<TimezoneDropdownProps> = ({
       >
         <option className="timezone-select-bg" value="">-- Select a timezone --</option>
         {timezones.map((tz) => (
-          <option key={tz.id} value={tz.id}>
+          <option className="timezone-select-bg" key={tz.id} value={tz.id}>
             {tz.name} ({tz.id})
           </option>
         ))}
