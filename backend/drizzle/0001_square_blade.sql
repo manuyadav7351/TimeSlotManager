@@ -1,0 +1,1 @@
+ALTER TABLE "timeslots" DROP COLUMN "id";
