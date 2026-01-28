@@ -16,8 +16,8 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/api/timezones", timezoneRoutes);
-app.use("/api/timeslots", timeslotRoutes);
+app.use("/timezones", timezoneRoutes);
+app.use("/timeslots", timeslotRoutes);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
