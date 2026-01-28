@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
-import timezoneRoutes from "./routes/timezoneRoutes";
-import timeslotRoutes from "./routes/timezoneSlotRoutes";
+import timezoneRoutes from "./routes/timezoneRoutes.js";
+import timeslotRoutes from "./routes/timezoneSlotRoutes.js";
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import cors from "cors";

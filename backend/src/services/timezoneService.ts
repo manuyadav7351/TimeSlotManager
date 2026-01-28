@@ -1,5 +1,5 @@
-import { db } from "../db/connection";
-import { timezones } from "../db/schema";
+import { db } from "../db/connection.js";
+import { timezones } from "../db/schema.js";
 
 export const fetchTimezones = async () => {
   return await db.select().from(timezones);
