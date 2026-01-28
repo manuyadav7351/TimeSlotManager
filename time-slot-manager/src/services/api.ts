@@ -4,7 +4,7 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/a
 
 export const fetchTimezones = async (): Promise<Timezone[]> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/timezones`);
+    const response = await fetch(`${API_BASE_URL}/api/timezones`);
     if (!response.ok) {
       throw new Error(`Failed to fetch timezones: ${response.statusText}`);
     }
@@ -17,7 +17,7 @@ export const fetchTimezones = async (): Promise<Timezone[]> => {
 
 export const fetchTimeslots = async (): Promise<string[]> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/timeslots`);
+    const response = await fetch(`${API_BASE_URL}/api/timeslots`);
     if (!response.ok) {
       throw new Error(`Failed to fetch timeslots: ${response.statusText}`);
     }
